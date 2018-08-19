@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding-top: 150px;
+}
+
+#container {
+  background-color: tomato;
+  text-align: center;
+  color: white;
+  padding: 150px;
+  /* gives the curve or unicatheme  */
+  /* border-top-right-radius: 200px; */
+  position: relative;
+}
+#container:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: '';
+  background-color: purple;
+  height: 50%;
+  width: 100%;
+}
