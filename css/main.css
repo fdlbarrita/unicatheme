@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding-top: 250px;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 #container {
@@ -9,36 +9,14 @@ body {
   text-align: center;
   color: white;
   padding: 150px;
-  /* gives the curve or unicatheme  */
-  /* border-top-right-radius: 200px; */
   position: relative;
-
-
 }
-/* Top angel of border slanted  */
-  #container:before {
+
+#container #child {
+  height: 150px;
+  width: 150px;
+  background-color:  purple;
   position: absolute;
-  left: 0;
-  top: -30%;
-  content: '';
-  z-index: -1;
-  background-color: tomato;
-  height: 50%;
-  width: 105%;
-  transform: rotate(-5deg);
-}
-
-/* bottome slanted border  */
-#container:after {
-position: absolute;
-left: 0;
-bottom: -30%;
-content: '';
-z-index: -1;
-background-color: tomato;
-height: 50%;
-width: 105%;
-/* transform: skew(0, 5deg); */
-transform: rotate(5deg);
-
+  bottom: 0;
+  right: 0;
 }
