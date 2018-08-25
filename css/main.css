@@ -13,10 +13,28 @@ body {
 }
 
 #container #child {
-  height: 150px;
-  width: 150px;
+  height: 350px;
+  width: 350px;
   background-color:  purple;
   position: absolute;
+  bottom: -175px;
+  right: 40px;
+}
+
+#container #child #grandchild, #container #child #grandchild #greatgrandchild
+#great-grandchild{
+  background-color: green;
+  height: 150px;
+  width: 150px;
+  position: absolute;
   bottom: 0;
-  right: 0;
+  left: 0;
+}
+#container #child #grandchild #great-grandchild {
+background-color: blue;
+height: 50px;
+width: 50px;
+top: 0;
+right: 0;
+
 }
