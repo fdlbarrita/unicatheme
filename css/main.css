@@ -5,14 +5,39 @@ body {
 }
 
 #container {
-  background-color: tomato;
+  background-color: crimson;
   text-align: center;
   color: white;
   padding: 150px;
   position: relative;
 }
 
-#container #child {
+#container:before{
+  position: absolute;
+  left: 0;
+  top: -30%;
+  content: '';
+  z-index: -1;
+  background-color: inherit;
+  height: 50%;
+  width: 105%;
+  transform: rotate(-5deg);
+}
+
+#container:after{
+  position: absolute;
+  left: 0;
+  bottom: -30%;
+  content: '';
+  z-index: -1;
+  background-color: inherit;
+  height: 50%;
+  width: 105%;
+  transform: rotate(5deg);
+}
+
+
+/* #container #child {
   height: 350px;
   width: 350px;
   background-color:  purple;
@@ -37,4 +62,4 @@ width: 50px;
 top: -100%;
 right: -100%;
 
-}
+} */
